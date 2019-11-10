@@ -85,7 +85,7 @@ $(document).on("mouseout", ".gif-img", function pause()
 $(document).on("click", ".gif-img", function pause_unpause()
 {
 	var pause_check = $(this).attr("is-paused");
-	if(pause_check === "paused") //this is never true for some reason. I'm checking the attribute wrong somehow.
+	if(pause_check === "paused")
 	{
 		$(this).attr("src", $(this).attr("played-img"));
 		$(this).attr("is-paused", "unpaused");
